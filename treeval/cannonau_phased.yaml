@@ -1,0 +1,38 @@
+assembly:
+  assem_level: scaffold
+  assem_version: 1
+  sample_id: phased
+  latin_name: Vitis_vinifera
+  defined_class: dicots
+  project_id: Lia
+reference_file: /home/edg01/edg01/lia/Cannonau/treeval/treeval-resources/gene_alignment_prep/raw_fasta/VitisVinifera-phased.cdna.fa
+map_order: length
+assem_reads:
+  read_type: hifi
+  read_data: /home/edg01/edg01/lia/Cannonau/treeval/hifi_data/
+  supplementary_data: 
+hic_data:
+  hic_cram: /home/edg01/edg01/lia/Cannonau/treeval/hic_data/
+  hic_aligner: minimap2
+kmer_profile:
+  # kmer_length will act as input for kmer_read_cov fastk and as the name of folder in profile_dir
+  kmer_length: 31
+  dir: /home/edg01/edg01/lia/Cannonau/treeval/hifi_data/
+alignment:
+  data_dir: /home/edg01/edg01/lia/Cannonau/treeval/treeval-resources/gene_alignment_data/
+  common_name: "" # For future implementation (adding bee, wasp, ant etc)
+  geneset_id: "VitisVinifera.phased"
+  #Path should end up looking like "{data_dir}{classT}/{common_name}/csv_data/{geneset}-data.csv"
+self_comp:
+  motif_len: 0
+  mummer_chunk: 10
+intron:
+  size: "50k"
+telomere:
+  teloseq: TTTAGGG
+synteny:
+  synteny_path: /home/edg01/edg01/lia/Cannonau/treeval/treeval-resources/synteny/
+  synteny_genomes: ""
+busco:
+  lineages_path: /home/edg01/edg01/lia/Cannonau/colora/resources/busco_db/
+  lineage: eudicots_odb10
