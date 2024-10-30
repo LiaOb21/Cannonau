@@ -1,3 +1,6 @@
+[![DOI](https://zenodo.org/badge/842537755.svg)](https://doi.org/10.5281/zenodo.14014216)
+
+
 # Cannonau genome project 
 
 This repository collects all the commands and script used for the Cannonau genome project. This work is part of the PhD project carried out by Lia Obinu.
